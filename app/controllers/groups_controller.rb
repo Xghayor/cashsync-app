@@ -1,2 +1,4 @@
 class GroupsController < ApplicationController
-end
+    load_and_authorize_resource
+  end
+  
