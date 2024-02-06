@@ -1,0 +1,28 @@
+<h1>Entities for <%= @group.name %></h1>
+
+<p>Total Amount for <%= @group.name %>: <%= number_to_currency(@group.total_amount) %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Author</th>
+      <th>Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entities.each do |entity| %>
+      <tr>
+        <td><%= entity.name %></td>
+        <td><%= number_to_currency(entity.amount) %></td>
+        <td><%= entity.author.name %></td>
+        <td><%= entity.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Add a New Entity', new_group_entity_path(@group) %>
+
+<%= link_to 'Back', root_path %>

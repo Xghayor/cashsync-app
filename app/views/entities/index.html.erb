@@ -1,0 +1,28 @@
+<h1>Entities for <%= @group.name %></h1>
+
+<%= link_to 'Add a New Entity', new_user_group_entity_path(@group.user, @group) %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entities.each do |entity| %>
+      <tr>
+        <td><%= entity.name %></td>
+        <td><%= entity.amount %></td>
+        <td>
+          <%= link_to 'Show', user_group_entity_path(@group.user, @group, entity) %>
+          <%= link_to 'Edit', edit_user_group_entity_path(@group.user, @group, entity) %>
+          <%= link_to 'Destroy', user_group_entity_path(@group.user, @group, entity), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Back', user_groups_path(@group.user) %>

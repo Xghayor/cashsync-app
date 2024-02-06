@@ -1,0 +1,15 @@
+<h1>Categories</h1>
+
+<% @groups.each do |group| %>
+  <div class="category-item">
+    <h2><%= group.name %></h2>
+    <p><%= image_tag(group.icon) %></p>
+    <p>Total Transactions: <%= group.total_transactions_amount %></p>
+    <%= link_to "View Transactions", user_group_entities_path(group, @user) %>
+
+  </div>
+<% end %>
+
+<%= link_to "Add a New Category", new_user_group_path(@user) %>
+
+
