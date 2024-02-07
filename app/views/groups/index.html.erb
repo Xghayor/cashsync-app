@@ -4,7 +4,9 @@
   <div class="category-item">
     <h2><%= group.name %></h2>
     <p><%= image_tag(group.icon) %></p>
-    <p>Total Transactions: <%= group.total_transactions_amount %></p>
+    <div id="total-amount">
+  <p>Total Transactions: <%= number_to_currency(group.total_transactions_amount) %></p>
+</div>
     <% if group.id.present? %>
       <%= link_to "View Transactions", user_group_entities_path(user_id: @user.id, group_id: group.id) %>
     <% else %>

@@ -11,8 +11,6 @@
     </div>
   <% end %>
 
-  <%= form.hidden_field :author_id, value: @user.id %>
-
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
@@ -21,6 +19,11 @@
   <div class="field">
     <%= form.label :amount %>
     <%= form.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :group_id %>
+    <%= form.collection_select :group_id, @user.groups, :id, :name, prompt: 'Select a group' %>
   </div>
 
   <div class="actions">

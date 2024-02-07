@@ -1,0 +1,54 @@
+.splash-body {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  background-color: #3778c2;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.splash-body hr {
+  width: 10px;
+}
+
+.splash-description{
+  font-family: 'Proxima Nova Light', sans-serif;
+  margin-bottom: 20%;
+}
+
+.splash-btn {
+  display: block;
+  width: 300px; 
+  margin: 10px 0; 
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.splash-btn:hover {
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+.splash-btn-primary {
+  border-color: transparent;
+  background-color: #5fb523;
+}
+
+.splash-btn-success {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2)
+}
