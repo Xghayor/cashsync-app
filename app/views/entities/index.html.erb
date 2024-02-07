@@ -1,16 +1,22 @@
-<h1>Transactions </h1>
-
-<%= link_to 'Add a New Transction', new_user_group_entity_path(@user, @group) %>
-
-<div id="total-amount">
-  <p>Total Amount: <%= number_to_currency(@group.total_transactions_amount) %></p>
-</div>
-
-<% @entities.each do |entity| %>
-  <div class="entity">
-    <h2><%= entity.name %></h2>
-    <p>Amount: <%= number_to_currency(entity.amount) %></p>
+<div class="container">
+  <div>
+    <%= link_to '<', root_path, class: "back-link" %>
+    <h1>Transactions</h1>
   </div>
-<% end %>
+  <div id="transactions-container">
+    <div id="transactions">
+      <div class="total-amount">
+        <p>Total Amount</p>
+        <p><%= number_to_currency(@group.total_transactions_amount) %></p>
+      </div>
 
-<%= link_to 'Back', authenticated_root_path %>
+      <% @entities.each do |entity| %>
+        <div class="entity">
+          <h2><%= entity.name %></h2>
+          <p><%= number_to_currency(entity.amount) %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <%= link_to 'Add a New Transaction', new_user_group_entity_path(@user, @group), class: "add-transaction-btn" %>
+</div>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CashsyncApp</title>
+    <title>CashSync App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'groups/group_styles', 'static_pages/static_pages_styles', 'entities/entity_styles', 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_importmap_tags %>
@@ -14,7 +14,6 @@
   <body>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
     <%= yield %>
   </body>
 </html>
