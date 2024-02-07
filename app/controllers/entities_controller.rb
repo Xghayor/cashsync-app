@@ -1,17 +1,19 @@
 class EntitiesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_user_and_group
 
   def index
-    @entities = @group.entities.all
+    @entities = @group.entities
   end
+  
 
   def new
     @entity = @group.entities.build
   end
 
   def create
-    @entity = @user.groups.entities.build(entity_params)
-
+    @entity = @group.entities.build(entity_params)
+    @entity.author = current_user
     if @entity.save
       redirect_to user_group_entities_path(@user, @group)
     else

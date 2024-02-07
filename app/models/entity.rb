@@ -7,7 +7,7 @@ class Entity < ApplicationRecord
 
   private
 
-  def most_recent_entities()
+  def most_recent_entities
     order(created_at: :desc).limit(5)
   end
 end

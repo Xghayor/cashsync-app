@@ -1,18 +1,17 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
   load_and_authorize_resource
+  before_action :set_current_user, only: [:index, :new, :create]
 
-  def index 
-    @user = current_user
-   @groups = Group.all
+  def index
+    @groups = @user.groups
   end
 
   def new
-    @user = current_user
     @group = @user.groups.build
   end
 
   def create
-    @user = current_user
     @group = @user.groups.build(group_params)
     if @group.save
       redirect_to authenticated_root_path
@@ -22,6 +21,10 @@ class GroupsController < ApplicationController
   end
 
   private
+
+  def set_current_user
+    @user = current_user
+  end
 
   def group_params
     params.require(:group).permit(:name, :icon)
