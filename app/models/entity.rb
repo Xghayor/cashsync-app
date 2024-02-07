@@ -8,6 +8,6 @@ class Entity < ApplicationRecord
   private
 
   def most_recent_entities
-    order(created_at: :desc).limit(5)
+    order(created_at: :desc)
   end
 end

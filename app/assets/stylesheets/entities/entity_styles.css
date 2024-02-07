@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+    color: #434b54
+  }
+  
+  .container {
+    width: 60vh;
+  }
+
+  
+  
+  .container h1 {
+    background-color: #3778c2;
+    color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #transactions-container {
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #transactions {
+    text-align: left;
+  }
+  
+  .total-amount {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #f4f4f487;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .entity {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .entity h2 {
+    color: #434b54;
+    background-color: transparent;
+  }
+  
+  .entity p {
+    color: #666;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: none;
+  }
+
+  .back-link {
+    position: absolute;
+    top:20px;
+    left: 10%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .add-transaction-btn {
+    width: 80%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #28a745; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .add-transaction-btn:hover {
+    background-color: #218838; 
+  }
+
+
+
+form {
+    max-width: 600px;
+   margin: 10px;
+    text-align: left;
+  }
+  
+  #error_explanation {
+    color: red;
+  }
+  
+  .field {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .create-entity-btn {
+    background-color: #28a745; /* Green background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-entity-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
