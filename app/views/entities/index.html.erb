@@ -1,0 +1,16 @@
+<h1>Transactions </h1>
+
+<%= link_to 'Add a New Transction', new_user_group_entity_path(@user, @group) %>
+
+<div id="total-amount">
+  <p>Total Amount: <%= number_to_currency(@group.total_transactions_amount) %></p>
+</div>
+
+<% @entities.each do |entity| %>
+  <div class="entity">
+    <h2><%= entity.name %></h2>
+    <p>Amount: <%= number_to_currency(entity.amount) %></p>
+  </div>
+<% end %>
+
+<%= link_to 'Back', authenticated_root_path %>

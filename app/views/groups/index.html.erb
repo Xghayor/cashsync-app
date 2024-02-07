@@ -1,0 +1,18 @@
+<h1>Categories</h1>
+
+<% @groups.each do |group| %>
+  <div class="category-item">
+    <h2><%= group.name %></h2>
+    <p><%= image_tag(group.icon) %></p>
+    <div id="total-amount">
+  <p>Total Transactions: <%= number_to_currency(group.total_transactions_amount) %></p>
+</div>
+    <% if group.id.present? %>
+      <%= link_to "View Transactions", user_group_entities_path(user_id: @user.id, group_id: group.id) %>
+    <% else %>
+      <%= "View Transactions (Not available)" %>
+    <% end %>
+  </div>
+<% end %>
+
+<%= link_to "Add a New Category", new_user_group_path(@user) %>
