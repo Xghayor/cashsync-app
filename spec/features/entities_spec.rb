@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'Transaction Management', type: :feature do
+RSpec.feature 'Transctions', type: :feature do
   scenario 'User views the transactions page for a group' do
     user = User.create!(
       name: 'John Doe',

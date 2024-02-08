@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'Category Management', type: :feature do
+RSpec.feature 'Categories', type: :feature do
   scenario 'User logs in and views the category page with groups' do
     user = User.create!(
       name: 'John Doe',

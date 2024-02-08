@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'User Authentication', type: :feature do
+RSpec.feature 'Users', type: :feature do
   let(:user) do
     User.create!(
       name: 'test-name',

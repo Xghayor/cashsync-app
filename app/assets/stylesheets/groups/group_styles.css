@@ -4,9 +4,9 @@ body {
 }
 
 .group-h2 {
+  font-family: 'Proxima Nova Bold', sans-serif;
   background-color: white;
   color: grey;
-  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 .group-heading {
