@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.0.2'
+ruby '3.2.2'
 
 gem 'webdrivers'
 
@@ -72,3 +72,6 @@ group :test do
   gem 'rails-controller-testing'
   gem 'selenium-webdriver'
 end
+
+gem 'activesupport', '~> 7.1.3'
+gem 'rubyzip', '~> 2.3.0'
