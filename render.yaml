@@ -2,7 +2,6 @@ databases:
   - name: cashsync 
     databaseName: cashsync_app_production  
     user: postgres  
-    password: 123456 
     plan: free
 
 services:
