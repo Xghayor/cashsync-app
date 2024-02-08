@@ -1,0 +1,23 @@
+databases:
+  - name: cashsync 
+    databaseName: cashsync_app_production  
+    user: postgres  
+    password: 123456 
+    plan: free
+
+services:
+  - type: web
+    name: cashsync 
+    runtime: ruby
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "./bin/rails server"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cashsync_app_db
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: WEB_CONCURRENCY
+        value: 2

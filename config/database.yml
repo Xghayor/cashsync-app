@@ -83,6 +83,6 @@ test:
 production:
   <<: *default
   database: cashsync_app_production
-  # username: budget_app
-  # password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
+  # username: cashsync_app
+  # password: <%= ENV["CASHSYNC_APP_PASSWORD"] %>
   url: <%= ENV["DATABASE_URL"] %>
