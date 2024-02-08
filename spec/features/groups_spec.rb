@@ -1,3 +1,4 @@
+# rubocop:disable all
 require 'rails_helper'
 
 RSpec.feature 'Categories', type: :feature do

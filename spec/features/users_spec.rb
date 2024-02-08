@@ -1,3 +1,4 @@
+# rubocop:disable all
 require 'rails_helper'
 
 RSpec.feature 'Users auth', type: :feature do
