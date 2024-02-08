@@ -5,7 +5,6 @@ class EntitiesController < ApplicationController
   def index
     @entities = @group.entities
   end
-  
 
   def new
     @entity = @group.entities.build

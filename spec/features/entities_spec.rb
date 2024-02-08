@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.feature 'Transaction Management', type: :feature do
   scenario 'User views the transactions page for a group' do
-
     user = User.create!(
       name: 'John Doe',
       email: 'john@example.com',
@@ -23,11 +22,12 @@ RSpec.feature 'Transaction Management', type: :feature do
 
     expect(page).to have_content('Transactions')
 
-    entity1 = group.entities.create!(name: 'Entity 1', amount: 20.5, author: user)
-    entity2 = group.entities.create!(name: 'Entity 2', amount: 15.75, author: user)
+    group.entities.create!(name: 'Entity 1', amount: 20.5, author: user)
+    group.entities.create!(name: 'Entity 2', amount: 15.75, author: user)
 
-    expect(page).to have_css(".total-amount p", text: 'Total Amount')
+    expect(page).to have_css('.total-amount p', text: 'Total Amount')
 
-    expect(page).to have_link('Add a New Transaction', href: new_user_group_entity_path(user, group), class: 'add-transaction-btn')
+    expect(page).to have_link('Add a New Transaction', href: new_user_group_entity_path(user, group),
+                                                       class: 'add-transaction-btn')
   end
 end

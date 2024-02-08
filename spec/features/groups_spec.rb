@@ -8,8 +8,8 @@ RSpec.feature 'Category Management', type: :feature do
       password: 'password123'
     )
 
-    group1 = user.groups.create!(name: 'Group 1', icon: 'nil.png')
-    group2 = user.groups.create!(name: 'Group 2', icon: 'nil2.png')
+    user.groups.create!(name: 'Group 1', icon: 'nil.png')
+    user.groups.create!(name: 'Group 2', icon: 'nil2.png')
 
     visit new_user_session_path
     fill_in 'Email', with: user.email
@@ -44,8 +44,8 @@ RSpec.feature 'Category Management', type: :feature do
 
     expect(page).to have_content('CATEGORIES')
 
-    [group1, group2].each do |group|
-      expect(page).to have_css(".category-item img")
+    [group1, group2].each do |_group|
+      expect(page).to have_css('.category-item img')
     end
   end
 

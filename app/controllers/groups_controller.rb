@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   before_action :authenticate_user!
   load_and_authorize_resource
-  before_action :set_current_user, only: [:index, :new, :create]
+  before_action :set_current_user, only: %i[index new create]
 
   def index
     @groups = @user.groups

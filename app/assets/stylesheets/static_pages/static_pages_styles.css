@@ -20,7 +20,7 @@
   width: 10px;
 }
 
-.splash-description{
+.splash-description {
   font-family: 'Proxima Nova Light', sans-serif;
   margin-bottom: 40%;
   overflow: hidden;
@@ -28,8 +28,8 @@
 
 .splash-btn {
   display: block;
-  width: 300px; 
-  margin: 10px 0; 
+  width: 300px;
+  margin: 10px 0;
   padding: 10px 20px;
   font-size: 1.2em;
   text-align: center;
@@ -51,5 +51,5 @@
 
 .splash-btn-success {
   border-color: transparent;
-  background-color: rgba(255, 255, 255, 0.2)
+  background-color: rgba(255, 255, 255, 0.2);
 }
