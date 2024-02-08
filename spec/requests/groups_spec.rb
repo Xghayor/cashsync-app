@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "Groups", type: :request do
-  describe "GET /" do
-    it "creates a confirmed user, signs in, and is redirected to the authenticated root path" do
+RSpec.describe 'Groups', type: :request do
+  describe 'GET /' do
+    it 'creates a confirmed user, signs in, and is redirected to the authenticated root path' do
       user_params = {
         name: 'John Doe',
         email: 'john@example.com',
@@ -18,14 +18,14 @@ RSpec.describe "Groups", type: :request do
   end
 
   describe 'POST /users/:user_id/groups' do
-    let(:user_params) {
+    let(:user_params) do
       {
         name: 'John Doe',
         email: 'john@example.com',
         password: 'password123',
         password_confirmation: 'password123'
       }
-    }
+    end
     let(:user) { User.create(user_params) }
 
     before do

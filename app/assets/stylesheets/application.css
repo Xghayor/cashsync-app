@@ -8,44 +8,41 @@
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url('/assets/fonts/Proxima-Nova-Light.otf') format('truetype');
-  font-weight: lighter; 
+  font-weight: lighter;
   font-style: normal;
 }
 
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Proxima Nova Bold', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
   max-width: 600px;
-  margin: 0 auto; 
   text-align: center;
 }
 
-h2{
-font-family: 'Proxima Nova Bold', sans-serif;
-background-color: #3778c2;
-padding-top: 10px;
-padding-bottom: 10px;
-margin: 0;
-color: white;
+h2 {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  background-color: #3778c2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: white;
 }
 
-.notice{
-  top:50px;
+.notice {
+  top: 50px;
   color: green;
   margin: 0;
   position: absolute;
 }
 
-.alert{
-  top:50px;
+.alert {
+  top: 50px;
   position: absolute;
-  color:red;
+  color: red;
   margin: 0;
 }
-
 
 .login-container {
   width: 100%;
@@ -64,14 +61,14 @@ color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  color: #fff; 
+  color: #fff;
   height: 100vh;
 }
 
 .back-btn {
   position: absolute;
   left: 20px;
-  top: 0px;
+  top: 0;
   color: #fff;
   padding: 5px 10px;
   border: none;
@@ -95,16 +92,16 @@ color: white;
   width: 100px;
 }
 
-.new_user{
+.new_user {
   text-align: left;
   padding: 20px;
 }
 
-
 .new_user input[type="submit"] {
   background-color: transparent;
 }
-.new_user input{
+
+.new_user input {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -112,14 +109,12 @@ color: white;
   font-size: 1rem;
 }
 
-#error_explanation{
+#error_explanation {
   color: red;
   font-size: 0.7rem;
-  background-color: none;
 }
 
-
-.forgot-password-link{
+.forgot-password-link {
   color: grey;
   text-decoration: none;
 }
@@ -130,6 +125,6 @@ color: white;
 
 @media screen and (max-width: 767px) {
   body {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
