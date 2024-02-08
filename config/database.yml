@@ -15,9 +15,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: 123456
-  host: localhost
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -82,7 +79,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: cashsync_app_production
-  # username: cashsync_app
-  # password: <%= ENV["CASHSYNC_APP_PASSWORD"] %>
-  url: <%= ENV["DATABASE_URL"] %>
+  username: cashsync_app
+  password: <%= ENV['CASHSYNC_APP_DATABASE_PASSWORD'] %>

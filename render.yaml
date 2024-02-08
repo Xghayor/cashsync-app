@@ -1,6 +1,7 @@
 databases:
-  - name: cashsync 
-    databaseName: cashsync_app_production  
+  - name: postgres
+  ipAllowList: [] 
+    databaseName: cashsync
     user: cashsync  
     plan: free
 
@@ -9,12 +10,12 @@ services:
     name: cashsync 
     runtime: ruby
     plan: free
-    buildCommand: "./bin/render-build.sh"
-    startCommand: "./bin/rails server"
+    buildCommand: "./render-build.sh"
+    startCommand: "bundle exec rails s"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: cashsync
+          name: postgres
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
