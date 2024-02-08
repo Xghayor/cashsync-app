@@ -56,7 +56,7 @@ This project is built using the following technologies:
 ## 🚀 Live Demo & Video presentation<a name="live-demo"></a> <a name='video'></a>
 <br>
 
-- [Check the live demo, mobile version](https://dugetapp.onrender.com)
+- [Check the live demo, mobile version](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +84,7 @@ Before running this project, make sure you have the following prerequisites inst
 2. Navigate to the project directory:
 
     ```sh
-    cd Budget-app-capstone
+    cd cashsync-app
 
 3. Run the program:
     ```sh
