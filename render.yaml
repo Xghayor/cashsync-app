@@ -1,21 +1,21 @@
 databases:
-  - name: budgettrackie
-    databaseName: budgettrackie
-    user: budgettrackie
+  - name: postgres
+  ipAllowList: [] 
+    databaseName: cashsync
+    user: cashsync  
     plan: free
 
 services:
   - type: web
-    name: budgettrackie
+    name: cashsync 
     runtime: ruby
     plan: free
-    buildCommand: "./bin/render-build.sh"
-    # preDeployCommand: "./bin/rails db:migrate" # preDeployCommand only available on paid instance types
-    startCommand: "./bin/rails server"
+    buildCommand: "./render-build.sh"
+    startCommand: "bundle exec rails s"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: budgettrackie
+          name: postgres
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false

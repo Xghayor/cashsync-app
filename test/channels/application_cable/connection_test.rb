@@ -1,3 +1,5 @@
+#  : true
+
 require 'test_helper'
 
 module ApplicationCable

@@ -16,6 +16,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+node_modules/
+
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -34,7 +36,4 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-/app/assets/builds/*
-!/app/assets/builds/.keep
-
-/node_modules
+node_modules/
