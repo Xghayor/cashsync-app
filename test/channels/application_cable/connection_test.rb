@@ -1,4 +1,6 @@
-require "test_helper"
+#  : true
+
+require 'test_helper'
 
 module ApplicationCable
   class ConnectionTest < ActionCable::Connection::TestCase

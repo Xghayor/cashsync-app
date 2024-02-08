@@ -12,7 +12,7 @@
 
       <% @entities.each do |entity| %>
         <div class="entity">
-          <h2><%= entity.name %></h2>
+          <h2 class= "entity-h2"><%= entity.name %></h2>
           <p><%= number_to_currency(entity.amount) %></p>
         </div>
       <% end %>
