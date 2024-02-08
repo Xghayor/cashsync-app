@@ -1,7 +1,7 @@
 databases:
   - name: cashsync 
     databaseName: cashsync_app_production  
-    user: postgres  
+    user: cashsync  
     plan: free
 
 services:
