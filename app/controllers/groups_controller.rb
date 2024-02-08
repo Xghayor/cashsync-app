@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   before_action :set_current_user, only: %i[index new create]
 
   def index
-    @groups = @user.groups
+    @groups = @user.groups.includes(:entities)
   end
 
   def new

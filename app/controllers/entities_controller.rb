@@ -3,7 +3,7 @@ class EntitiesController < ApplicationController
   before_action :set_user_and_group
 
   def index
-    @entities = @group.entities
+    @entities = @group.entities.includes(:author)
   end
 
   def new
