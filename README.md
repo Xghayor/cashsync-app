@@ -54,9 +54,9 @@ This project is built using the following technologies:
 
 ## 📷 Screenshots
 <p align="center">
-  <img src="./screenshots/screenshot1.PNG" alt="Screenshot 1" width="300">
-  <img src="./screenshots/screenshot2.PNG" alt="Screenshot 2" width="300">
-  <img src="./screenshots/screenshot3.PNG" alt="Screenshot 3" width="300">
+  <img src="./screenshots/screenshot1.PNG" alt="Screenshot 1" width="200" height="100">
+  <img src="./screenshots/screenshot2.PNG" alt="Screenshot 2" width="200"  height="100">
+  <img src="./screenshots/screenshot3.PNG" alt="Screenshot 3" width="200"  height="100">
 </p>
 
 
