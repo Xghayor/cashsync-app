@@ -17,7 +17,7 @@
 - [📝 License](#license)
 
 
-# 📖 Budget app project <a name="about-project"></a>
+# 📖 CashSync App project <a name="about-project"></a>
 <br>
 A Ruby on Rails mobile app capstone project for seamless budgeting, expense tracking, and financial planning with real-time synchronization and insightful analytics.<br>
 <br>
@@ -52,9 +52,9 @@ This project is built using the following technologies:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📷 Screenshots
-![Screenshot 1](./screenshots/screenshot1.png)
-![Screenshot 2](./screenshots/screenshot2.png)
-![Screenshot 3](./screenshots/screenshot3.png)
+![Screenshot 1](./screenshots/screenshot1.PNG)
+![Screenshot 2](./screenshots/screenshot2.PNG)
+![Screenshot 3](./screenshots/screenshot3.PNG)
 
 
 
