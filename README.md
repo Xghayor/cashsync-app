@@ -52,9 +52,9 @@ This project is built using the following technologies:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📷 Screenshots
-<img src="./screenshots/screenshot1.PNG" alt="Screenshot 1" width="600" height="400">
-<img src="./screenshots/screenshot2.PNG" alt="Screenshot 2" width="600" height="400">
-<img src="./screenshots/screenshot3.PNG" alt="Screenshot 3" width="600" height="400">
+<img src="./screenshots/screenshot1.PNG" alt="Screenshot 1" width="400" >
+<img src="./screenshots/screenshot2.PNG" alt="Screenshot 2" width="400" >
+<img src="./screenshots/screenshot3.PNG" alt="Screenshot 3" width="400" >
 
 
 
